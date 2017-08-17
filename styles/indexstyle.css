@@ -18,12 +18,16 @@ h1 {
   -webkit-hyphens: auto;
   hyphens: auto;
 }
+li {
+  font-size: 24px;
+}
 .input-group {
   font-size: 39px;
 }
 input, textarea:focus, input:focus {
   outline: none;
   border: none;
+  width: 80%;
 }
 .line {
   background: yellow;
@@ -34,7 +38,7 @@ input, textarea:focus, input:focus {
 #bigR.active{
   color: red;
 }
-@media (max-width: 991px) {
+/*@media (max-width: 991px) {
   .navbar-header {
       float: none;
   }
@@ -72,7 +76,7 @@ input, textarea:focus, input:focus {
   .visible-xs-inline {
         display: inline-block !important
   }
-}
+}*/
 #right-icons > li > a{
   /*padding-top:7px;
   padding-bottom: 0;*/
@@ -82,7 +86,7 @@ input, textarea:focus, input:focus {
   font-size: 1.3em;
 }
 .navtext {
-  font-size: 12px;
+  font-size: 24px;
 }
 .fa:hover {
   color: blue;
