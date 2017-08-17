@@ -1,0 +1,6 @@
+to push to remote server
+rsync -rvz -e 'ssh -p 1157' --progress /Users/reidmat/Dropbox/_web reidsher@reidsherman.com:/home/reidsher/public_html/
+
+This will push the local _web folder to the remote _web folder
+
+in the future I may want to rename this to public_html 
