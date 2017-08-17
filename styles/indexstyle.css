@@ -1,21 +1,28 @@
 
-.fa {
-  font-size: 1.3em;
-  color: red;
-}
-.fa-facebook-square {
+
+/*.fa-facebook-square {
   color: blue;
   padding: 0 0 0 0;
+}*/
+#right-icons > li > a{
+  /*padding-top:7px;
+  padding-bottom: 0;*/
+  /*padding: 15px 10px 15px 10px;*/
+  padding-left: 8px;
+  padding-right:8px;
+  font-size: 1.3em;
 }
-#test {
+.navtext {
+  font-size: 12px;
+}
+.fa:hover {
+  color: blue;
+}
+/*#test {
   padding-left: 0;
   color: yellow;
-}
-h1 a:hover {
-  color:steelblue;
-  /*text-decoration: underline;*/
+}*/
 
-}
 h1 {
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -34,6 +41,13 @@ input, textarea:focus, input:focus {
 .line {
   background: yellow;
 }
+#bigR {
+  color: green;
+}
+#bigR.active{
+  color: red;
+}
+
 /*.blinking-cursor {
   font-weight: 100;
   font-size: 30px;

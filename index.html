@@ -3,9 +3,12 @@
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/indexstyle.css">
     <meta charset="utf-8">
     <title>Reid Sherman</title>
+
   </head>
   <body>
     <nav class="navbar navbar-default">
@@ -18,22 +21,29 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">R</a>
+        <a class="navbar-brand" href="#"><span id="bigR" class="active">R</span></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="https://reidsherman.com/wp/">Writings</a></li>
+          <li><a href="https://reidsherman.com/projects/" class="navtext">Projects</a></li>
+          <li><a href="https://reidsherman.com/cv/" class="navtext">Skills</a></li>
+          <li><a href="https://reidsherman.com/wp/" class="navtext">Writings</a></li>
         </ul>
-        <ul   class="nav navbar-nav navbar-right" id="test">
-          <li><a href="#" class="btn btn-default btn-xs navicons fa fa-facebook-square fa-4x active" role="button" aria-hidden="true">
-  </a></li>
-          <li><a href="#"><i class="navicons fa fa-github-square" aria-hidden="true"></i></a></li>
-
+        <ul class="nav navbar-nav navbar-right" id="right-icons">
+          <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>
+            <span class="visible-xs-inline navtext">Email</span>
+          </a></li>
+          <li><a href="#"><i class="navicons fa fa-github-square" aria-hidden="true"></i>
+            <span class="visible-xs-inline navtext">Github</span>
+          </a></li>
+          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>
+          <span class="visible-xs-inline navtext">Linkedin</span>
+          </a></li>
+          <li><a href="#"><i class="navicons fa fa-facebook-square" aria-hidden="true"></i>
+            <span class="visible-xs-inline navtext">Facebook</span>
+          </a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -49,8 +59,6 @@
 
 <!-- $<span id="bashinput"></span><span class="blinking-cursor">|</span> -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="unixinterpreter.js">
 
     </script>
