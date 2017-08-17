@@ -1,0 +1,9 @@
+body {
+    font-size: 13px;
+    background-color: #005555;
+        
+}
+.box {
+    display: flex;
+    justify-content:space-around;
+}

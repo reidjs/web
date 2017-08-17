@@ -1,0 +1,91 @@
+
+.fa {
+  font-size: 1.3em;
+  color: red;
+}
+.fa-facebook-square {
+  color: blue;
+  padding: 0 0 0 0;
+}
+#test {
+  padding-left: 0;
+  color: yellow;
+}
+h1 a:hover {
+  color:steelblue;
+  /*text-decoration: underline;*/
+
+}
+h1 {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+.input-group {
+  font-size: 39px;
+}
+input, textarea:focus, input:focus {
+  outline: none;
+  border: none;
+}
+.line {
+  background: yellow;
+}
+/*.blinking-cursor {
+  font-weight: 100;
+  font-size: 30px;
+  color: #2E3D48;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}*/
