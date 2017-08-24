@@ -5,9 +5,9 @@
 body {
   position:relative;
 }
-div.col-sm-9 {
-    height: 250px;
-    font-size: 36px;
+div.col-sm-9 div{
+    height: 300px;
+    font-size: 28px;
 }
 ul.nav-stacked {
   position:fixed;
