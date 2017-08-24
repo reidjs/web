@@ -1,29 +1,35 @@
-div {
-  border: 1px solid black;
-  background-color: gray;
+
+/*body {
+      position: relative;
+}*/
+body {
+  position:relative;
+}
+div.col-sm-9 {
+    height: 250px;
+    font-size: 36px;
+}
+ul.nav-stacked {
+  position:fixed;
+}
+/*#myScrollspy {
+  margin-top: 400px;
+}*/
+/*nav.col-sm-3 {
+  position: relative;
+}*/
+#section1 {color: #fff; background-color: #1E88E5;}
+#section2 {color: #fff; background-color: #673ab7;}
+#section3 {color: #fff; background-color: #ff9800;}
+#section41 {color: #fff; background-color: #00bcd4;}
+#section42 {color: #fff; background-color: #009688;}
 
 
+@media screen and (max-width: 810px) {
+  #section1, #section2, #section3, #section41, #section42  {
+      margin-left: 45px;
+  }
 }
-div span.rowheader {
-  text-align: center;
-  overflow: hidden;
-  vertical-align:middle;
-}
-.rowheader {
-
-  margin: 0 auto;
-  padding: 5px 5px;
-  display: inline-block;
-  /*box-sizing: border-box;*/
-}
-.year {
-  float: right;
-  padding-right: 30px;
-}
-.school {
-  float: right;
-}
-.contact {
-  float:right;
-  font-size: 24px;
+li.active a{
+  color: #999;
 }
