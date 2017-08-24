@@ -1,0 +1,29 @@
+div {
+  border: 1px solid black;
+  background-color: gray;
+
+
+}
+div span.rowheader {
+  text-align: center;
+  overflow: hidden;
+  vertical-align:middle;
+}
+.rowheader {
+
+  margin: 0 auto;
+  padding: 5px 5px;
+  display: inline-block;
+  /*box-sizing: border-box;*/
+}
+.year {
+  float: right;
+  padding-right: 30px;
+}
+.school {
+  float: right;
+}
+.contact {
+  float:right;
+  font-size: 24px;
+}

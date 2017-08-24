@@ -14,12 +14,14 @@ $(".input-group").on("keypress", function(e){
 })
 
 function evaluateText(text) {
-  // var text = texts
-  // console.log(text)
-  var words = text.split(" ")
+  var words = text.toLowerCase().split(" ")
   var userInput = "<h1 class='userEntered'>: "+text+"</h1>"
-  if (words[0] === "echo")
-    return userInput + "<h1 class='userEntered'>" + words.slice(1).join() + "</h1>"
+  if (words[0] === "echo" && words.length > 1) {
+    if (words.slice(-1)[0].includes("path"))
+      return pathlink()
+    else
+      return userInput + "<h1 class='userEntered'>" + words.slice(1).join() + "</h1>"
+  }
   else if (words[0] === "clear")
     return clear()
   else if (words[0] == "help")
@@ -51,6 +53,9 @@ function changeDirectory(path) {
     return evaluateText('help')
   }
 
+}
+function pathlink() {
+  return "<h1 class='userEntered'> Reid/geology/astrophysics/educator/<a href='https://reidsherman.com/projects/'>software-developer</a></h1>"
 }
 function clear() {
   $(".userEntered").remove()

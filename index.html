@@ -1,12 +1,17 @@
 <!DOCTYPE html>
+<!--PASTEL COLOR THEME
+Dark purple: #493657
+Light pink: #CE7DA5
+Lime: #BEE5BF
+Lighter green: #DFF3E3
+Orange: #FFD1BA  -->
 <html>
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/indexstyle.css">
+    <link rel="stylesheet" href="assets/styles/indexstyle.css">
     <meta charset="utf-8">
     <!-- IMPORTANT MOBILE FIX: -->
     <!-- https://stackoverflow.com/questions/27746811/bootstrap-font-scaling-too-small-on-mobile -->
@@ -15,7 +20,7 @@
 
   </head>
   <body>
-    <nav class="navbar navbar-default" >
+    <nav class="navbar navbar-default" id="navbar" >
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -33,7 +38,7 @@
         <ul class="nav navbar-nav">
           <li><a href="https://reidsherman.com/projects/" class="navtext">Projects</a></li>
           <li><a href="https://reidsherman.com/cv/" class="navtext">Resumé</a></li>
-          <li><a href="https://reidsherman.com/wp/" class="navtext">WordPress</a></li>
+          <li><a href="https://reidsherman.com/wp/" class="navtext"><i class="fa fa-wordpress" aria-hidden="true"></i>ordPress</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right" id="right-icons">
           <li><a href="mailto:reidsherman+website@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>
@@ -54,7 +59,7 @@
     </nav>
     <div class = "container">
     <h1>: echo $PATH</h1>
-      <h1> Reid/<a href="#">geology</a>/astrophysics/educator/software-developer</h1>
+      <h1> Reid/geology/astrophysics/educator/<a href="https://reidsherman.com/projects/">software-developer</a></h1>
       <div class="input-group">
         $ <input type = "text" id="entertext" autofocus>
       </div>
@@ -63,7 +68,7 @@
 
 <!-- $<span id="bashinput"></span><span class="blinking-cursor">|</span> -->
 
-    <script type="text/javascript" src="unixinterpreter.js">
+    <script type="text/javascript" src="assets/js/unixinterpreter.js">
 
     </script>
   </body>
