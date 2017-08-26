@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-
-    <title>Reid Sherman | CV</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/styles/cvstyle.css">
+    <link rel="stylesheet" href="/assets/styles/navstyle.css">
     <meta charset="utf-8">
+    <!-- IMPORTANT MOBILE FIX: -->
+    <!-- https://stackoverflow.com/questions/27746811/bootstrap-font-scaling-too-small-on-mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reid Sherman</title>
+
   </head>
-
-
-  <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
-    <a name="top"></a>
+  <body>
     <nav class="navbar navbar-default" id="navbar" >
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -25,14 +24,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#"><span id="bigR" class="active">RJS</span></a>
+        <a class="navbar-brand" href="/"><span id="bigR" class="active">RJS</span></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><a href="https://reidsherman.com/projects/" class="navtext">Projects</a></li>
-          <li><a href="https://reidsherman.com/cv/" class="navtext">Resumé</a></li>
+          <li><a href="/projects.php" class="navtext">Projects</a></li>
+          <li><a href="/cv.php" class="navtext">Resumé</a></li>
           <li><a href="https://reidsherman.com/wp/" class="navtext"><i class="fa fa-wordpress" aria-hidden="true"></i>ordPress</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right" id="right-icons">
@@ -52,43 +51,3 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
     </nav>
-    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-    <div class="container">
-      <div class="row">
-        <nav class="col-sm-3 hidden-xs" id="myScrollspy">
-          <ul class="nav nav-stacked">
-            <li class="active"><a href="#top">Top</a></li>
-            <li><a href="#section1">Skills</a></li>
-            <li><a href="#section2">Section 2</a></li>
-            <li><a href="#section3">Section 3</a></li>
-          </ul>
-        </nav>
-
-        <div class="col-sm-9 col-xs-12">
-          <div id="section1">
-            <h1>Skills</h1>
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-          </div>
-          <div id="section2">
-            <h1>Section 2</h1>
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-          </div>
-          <div id="section3">
-            <h1>Section 3</h1>
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-          </div>
-          <div id="section41">
-            <h1>Section 4-1</h1>
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-          </div>
-          <div id="section42">
-            <h1>Section 4-2</h1>
-            <p>Try to scroll this section and look at the navigation list while scrolling!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script type="text/javascript" src="assets/js/topofscreen.js"></script>
-    <!-- <script type="text/javascript"src="assets/js/cvscroll.js"></script> -->
-  </body>
-</html>
