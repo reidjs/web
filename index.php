@@ -16,9 +16,10 @@ Orange: #FFD1BA  -->
     </div>
 
 <!-- $<span id="bashinput"></span><span class="blinking-cursor">|</span> -->
+<!-- <script data-main="assets/js/elizabot" src="assets/js/require.js"></script>  -->
 
-    <script type="text/javascript" src="assets/js/unixinterpreter.js">
-
-    </script>
+    <script data-main="assets/js/unixinterpreter" src="assets/js/require.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/elizabot.js"></script> -->
+    <!-- <script type="text/javascript" src="assets/js/unixinterpreter.js"></script> -->
   </body>
 </html>

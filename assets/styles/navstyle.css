@@ -23,7 +23,13 @@
 }
 .navtext:hover{
   font-size: 25px;
+  border-radius: 30px;
 }
 .fa:hover {
   color: blue;
+
+}
+
+.navbar {
+  background-color: #becbe0;
 }
