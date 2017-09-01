@@ -1,0 +1,2 @@
+TO START A LOCAL PHP SERVER 
+php -S localhost:3000

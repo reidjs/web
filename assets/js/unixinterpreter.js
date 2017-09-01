@@ -1,5 +1,6 @@
 // var elizabot = require('./elizabot.js');
 var hintGiven = false;
+var userInput = "";
 //To strip off the special characters from input
 // https://stackoverflow.com/questions/17066399/removing-special-characters-from-the-text-using-jquery
 $(".input-group").on("keypress", function(e){
@@ -11,42 +12,63 @@ $(".input-group").on("keypress", function(e){
     //get the output from the function
     console.log("TEXT INPUT: "+text);
     // var reply = replyFunction(text);
-    $(this).before(function(require, exports, module){
-      // var a = requirejs('elizabot');
-      var a = requirejs(['elizabot'], function(){
-        reply("a")
-      });
-
-      console.log("A");
-    });
-    // $(this).before(requirejs(["elizabot"], function(){
-    //
+    // var replytext = f(text)
+    userInput = htmlizeUserText(text);
+    returnFunctionFromUserInput(text);
+    // $(is).before(f(text))
+    // $(this).before(rep, requirejs(['elizabot'], function(require, exports, module){
+    //   console.log(require.reply(text));
+    //   rep = "Adsf"
+    //   $("input").val("");
+    //   document.body.scrollTop = document.body.scrollHeight;
     // }));
-    $("input").val("");
+
+
 
     // Scrolling to input box automatically
     // https://stackoverflow.com/questions/11715646/scroll-automatically-to-the-bottom-of-the-page
-    document.body.scrollTop = document.body.scrollHeight;
+
   }
 });
+// function lastresponse(t) {
+//   return t
+// }
+function htmlizeUserText(text) {
+  return "<h1 class='userEntered'>: "+text+"</h1>";
+}
+function reply(text){
+  $(".input-group").before(userInput, htmlizeUserText(text));
+  $("input").val("");
+  document.body.scrollTop = document.body.scrollHeight;
+}
+function elizaReply(text) {
+  requirejs(['elizabot'], function(require, exports, module){
+    reply(require.reply(text));
+  });
+}
 function echo(text) {
-  return text;
+  t = text.split(" ").slice(1);
+  reply(t);
+}
+function help() {
+  reply("In case of an emergency, please dial 911");
 }
 //returns the function based on the sanitzed text provided by user. Every return function
 //MUST take one argument.
 function returnFunctionFromUserInput(text) {
   var request = text.toLowerCase().split(" ")[0]; //the first word
+  // var userInput = htmlizeUserText(text);
   if (request === "echo") {
-    return echo;
+    echo(text);
   }
   else if (request === "clear") {
-    return clear;
+    clear();
   }
   else if (request === "help") {
-
+    help();
   }
   else {
-    return elizaReply;
+    elizaReply(text);
   }
 }
 function evaluateText(text) {
@@ -81,17 +103,17 @@ function evaluateText(text) {
 function printText(text) {
 
 }
-function elizaReply(text){
-  var x = function(text){
-    requirejs(["elizabot"], function() {
-    console.log(text);
-    // result=reply;
-    // return "<h1 class='userEntered'>"+reply+"</h1>";
-    return text;
-    });
-  };
-  return x(text);
-}
+// function elizaReply(text){
+//   var x = function(text){
+//     requirejs(["elizabot"], function() {
+//     console.log(text);
+//     // result=reply;
+//     // return "<h1 class='userEntered'>"+reply+"</h1>";
+//     return text;
+//     });
+//   };
+//   return x(text);
+// }
 function changeDirectory(path) {
   var path = path.toLowerCase()
   if (path == "reid") {
