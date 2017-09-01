@@ -1,10 +1,21 @@
 // var elizabot = require('./elizabot.js');
 var hintGiven = false;
 var userInput = "";
+// tooltip
+// https://stackoverflow.com/questions/39099894/how-to-keep-active-bootstrap-tooltip-without-hover-or-click
+  $('.tool_tip')
+    .attr('data-toggle', 'tooltip')
+    .attr('data-placement', 'bottom')
+    .tooltip({
+      trigger: 'manual'
+    })
+    .tooltip('show');
 //To strip off the special characters from input
 // https://stackoverflow.com/questions/17066399/removing-special-characters-from-the-text-using-jquery
 $(".input-group").on("keypress", function(e){
   if (e.which == 13) {
+    $(".tool_tip").tooltip('hide');
+
     // sanitize user input for injections
     var text = $("#entertext").val().replace(/[^a-z0-9\s]/gi, ' ').replace(/[_\s]/g, ' ');
     //parse the text and determine what function to use
@@ -37,9 +48,9 @@ function htmlizeUserText(text) {
   return "<h1 class='userEntered'>: "+text+"</h1>";
 }
 function reply(text){
-  $(".input-group").before(userInput, htmlizeUserText(text));
-  $("input").val("");
-  document.body.scrollTop = document.body.scrollHeight;
+  $(".input-group").before(userInput, "<em>"+htmlizeUserText(text)+"</em>");
+  clearInputBox();
+
 }
 function elizaReply(text) {
   requirejs(['elizabot'], function(require, exports, module){
@@ -48,7 +59,19 @@ function elizaReply(text) {
 }
 function echo(text) {
   t = text.split(" ").slice(1);
+  if (text.search("path") >= 0) {
+    reply("Your path is yours to decide :)");
+  } else {
   reply(t);
+  }
+}
+function clear() {
+  $(".userEntered").remove();
+  clearInputBox();
+}
+function clearInputBox(){
+  $("input").val("");
+  document.body.scrollTop = document.body.scrollHeight;
 }
 function help() {
   reply("In case of an emergency, please dial 911");
@@ -100,9 +123,9 @@ function evaluateText(text) {
     // console.log(result);
   }
 }
-function printText(text) {
-
-}
+// function printText(text) {
+//
+// }
 // function elizaReply(text){
 //   var x = function(text){
 //     requirejs(["elizabot"], function() {
@@ -132,7 +155,4 @@ function changeDirectory(path) {
 }
 function pathlink() {
   return "<h1 class='userEntered'> Reid/geology/astrophysics/educator/<a href='https://reidsherman.com/projects/'>software-developer</a></h1>"
-}
-function clear() {
-  $(".userEntered").remove()
 }

@@ -10,7 +10,8 @@ Orange: #FFD1BA  -->
     <h1>: echo $PATH</h1>
       <h1> Reid/geology/astrophysics/educator/<a href="/projects.php">software-developer</a></h1>
       <div class="input-group">
-        $ <input type = "text" id="entertext" autofocus>
+        $ <input type = "text" data-toggle="tooltip" title="Tell me about yourself!"
+          class="tool_tip" id="entertext" autofocus>
       </div>
 
     </div>
