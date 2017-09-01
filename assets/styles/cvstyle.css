@@ -5,28 +5,42 @@
 body {
   position:relative;
 }
-div.col-sm-9 div{
+div.col-sm-10 div{
     height: 300px;
     font-size: 28px;
 }
+ul div.container{
+  /*margin: 0 auto;*/
+  /*margin-top: 20px;*/
+
+  /*font-size:32px;*/
+}
+div > ul {
+  margin-top: 30px;
+}
 ul.nav-stacked {
   position:fixed;
+  font-size: 16px;
 }
+/*#myScrollspy {
+  position:fixed;
+}*/
 /*#myScrollspy {
   margin-top: 400px;
 }*/
 /*nav.col-sm-3 {
   position: relative;
 }*/
-#section1 {color: #fff; background-color: #1E88E5;}
-#section2 {color: #fff; background-color: #673ab7;}
-#section3 {color: #fff; background-color: #ff9800;}
-#section41 {color: #fff; background-color: #00bcd4;}
-#section42 {color: #fff; background-color: #009688;}
+#section1 {color: #fff; background-color: #000;}
+#section2 {color: #000; background-color: #fff;}
+#section3 {color: #fff; background-color: #000;}
+#section4 {color: #000; background-color: #fff;}
+#section5 {color: #fff; background-color: #000;}
+#section5 {color: #000; background-color: #fff;}
 
 
 @media screen and (max-width: 810px) {
-  #section1, #section2, #section3, #section41, #section42  {
+  #section1, #section2, #section3, #section4, #section5  {
       margin-left: 15px;
   }
 }
