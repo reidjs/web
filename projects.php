@@ -1,32 +1,62 @@
 <?php include("partials/header.html"); ?>
-  Page under construction! (obviously)
+  <!-- Page under construction! (obviously) -->
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-6 pink"><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">Open Modal</button></div>
-        <div class="col-lg-3 col-md-3 col-sm-6 pink">INSERT MODAL OF PROJECT</div>
-        <div class="col-lg-3 col-md-3 col-sm-6 pink">INSERT ANOTHER PROJECT HERE</div>
-      </div>
-    </div>
-    <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
+        <div class="col-lg-3 col-md-3 col-sm-6 pink">
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="..." alt="iOS Run Grouper">
+            <div class="card-block">
+              <h4 class="card-title">Run Grouper iOS App</h4>
+              <p class="card-text">Are you interested in running, but don't like running alone? The Run Group Tracker iOS App
+              loads your run groups' routes, times, and dates, then distributes it as a list to all active members in the group with the app.
+              </p>
+              <a href="#" data-toggle="collapse" data-target="#demo">Read more...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 pink">
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Reddit Scraper Bot</h4>
+              <p class="card-text">It's such a drag to have to open a new window and check if a movie or TV show is on Netflix Streaming,
+              so I made a bot to automatically tell you! It relies on the NetflixRoulette and praw APIs to check if the title is
+              currently available.
+              <a data-toggle="collapse" data-target="#demo2">Read more...</a>
+             </p>
+             <p class="collapse" id="demo2">
 
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+               <a href="#" data-toggle="collapse" data-target="#demo2">Hide</a>
+             </p>
+            </div>
+          </div>
         </div>
-        <div class="modal-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <div class="col-lg-3 col-md-3 col-sm-6 pink">
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Earth Science Resources</h4>
+              <p class="card-text">Are you an Earth Science Teacher looking for teaching resources, or a student studying for the
+                New York Regents Exam? Check out this repository of Earth Science Resources I've created/collected over the years.
+                <a href="#" data-toggle="collapse" data-target="#demo3">Read more...</a>
+              </p>
+              <p class="collapse" id="demo3">
+
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+              </p>
+
+            </div>
+          </div>
         </div>
       </div>
 
     </div>
-  </div>
+
   </body>
 </html>
