@@ -1,8 +1,12 @@
 .card-img-top {
-  width: 300px;
+  width: 85%;
   height: 120px;
+  margin: auto;
   border-radius: 25px;
 }
 .hide {
   display: none;
+}
+.card-block {
+  padding: 2px 4px 2px 4px;
 }
