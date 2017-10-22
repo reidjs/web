@@ -154,5 +154,6 @@ function changeDirectory(path) {
 
 }
 function pathlink() {
-  return "<h1 class='userEntered'> Reid/geology/astrophysics/educator/<a href='https://reidsherman.com/projects/'>software-developer</a></h1>"
+  return "<h1 class='userEntered'> Reid/geology/astrophysics/educator/<a href='https://reidsherman.com/projects/'>software-engineer</a></h1>"
 }
+$("#bigR").addClass("active");

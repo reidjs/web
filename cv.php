@@ -60,6 +60,7 @@ sidenav and does not become active when scrolled to.  -->
           </div>
       </div>
     </div>
+    <script type="text/javascript" src="assets/js/cv.js"></script>
     <!-- <script type="text/javascript" src="assets/js/topofscreen.js"></script> -->
     <!-- <script type="text/javascript"src="assets/js/cvscroll.js"></script> -->
   </body>
