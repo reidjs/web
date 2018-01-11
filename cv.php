@@ -20,7 +20,8 @@ sidenav and does not become active when scrolled to.  -->
         <div class="col-sm-10 col-xs-12">
           <div id="section1" class="container">
             <!-- <div class="container"> -->
-              <ul>Programming Languages
+              <h1>Programming Languages</h1>
+              <ul>
                 <li>Ruby</li>
                 <li>JavaScript</li>
                 <li>Python</li>
@@ -29,7 +30,8 @@ sidenav and does not become active when scrolled to.  -->
             <!-- </div> -->
           </div>
           <div id="section2" class="container">
-            <ul>App Development
+            <h1>App Development</h1>
+            <ul>
               <li>Ruby on Rails Backend</li>
               <li>NodeJS w/ Express Backend</li>
               <li>PostgreSQL Database</li>
@@ -37,7 +39,8 @@ sidenav and does not become active when scrolled to.  -->
             </ul>
           </div>
           <div id="section3" class="container">
-            <ul>Front-End/UX/Testing
+            <h1>Front-End/UX/Testing</h1>
+            <ul>
               <li>Bootstrap Framework</li>
               <li>Wordpress</li>
               <li>Responsive Design</li>
@@ -45,7 +48,8 @@ sidenav and does not become active when scrolled to.  -->
             </ul>
           </div>
           <div id="section4" class="container">
-            <ul>Network, APIs, and Libraries
+            <h1>Network, APIs, and Libraries</h1>
+            <ul>
               <li>ReactJS with Redux</li>
               <li>VueJS with Vuex</li>
               <li>Google Maps API</li>
@@ -53,7 +57,8 @@ sidenav and does not become active when scrolled to.  -->
             </ul>
           </div>
           <div id="section5" class="container">
-            <ul>Education
+            <h1>Education</h1>
+            <ul>
               <li>B.S. Earth and Planetary Science - UC Santa Cruz</li>
               <li>M.A.T. Earth Science Education - American Museum of Natural History</li>
               <li>Software Engineering Track - App Academy SF</li>
