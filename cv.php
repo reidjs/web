@@ -10,9 +10,9 @@ sidenav and does not become active when scrolled to.  -->
           <ul class="nav nav-stacked">
             <li class="active"><a href="#top">Top</a></li>
             <li><a href="#section1">Programming</a></li>
-            <li><a href="#section2">Back-End</a></li>
-            <li><a href="#section3">Front-End</a></li>
-            <li><a href="#section4">Science</a></li>
+            <li><a href="#section2">Development</a></li>
+            <li><a href="#section3">Front-End/UX</a></li>
+            <li><a href="#section4">APIs/Libs</a></li>
             <li><a href="#section5">Education</a></li>
           </ul>
         </nav>
@@ -24,31 +24,32 @@ sidenav and does not become active when scrolled to.  -->
                 <li>Ruby</li>
                 <li>JavaScript</li>
                 <li>Python</li>
-                <li>C/C++</li>
+                <li>Swift (Learning)</li>
               </ul>
             <!-- </div> -->
           </div>
           <div id="section2" class="container">
-            <ul>Back-End Development
-              <li>SQL</li>
-              <li>MongoDB</li>
-              <li>NodeJS</li>
-              <li>Apache Server</li>
+            <ul>App Development
+              <li>Ruby on Rails Backend</li>
+              <li>NodeJS w/ Express Backend</li>
+              <li>PostgreSQL Database</li>
+              <li>Heroku Deployment</li>
             </ul>
           </div>
           <div id="section3" class="container">
-            <ul>Front-End Development
-              <li>jQuery</li>
-              <li>NodeJS</li>
-              <li>PHP</li>
-              <li>HTML/CSS</li>
+            <ul>Front-End/UX/Testing
+              <li>Bootstrap Framework</li>
+              <li>Wordpress</li>
+              <li>Responsive Design</li>
+              <li>Test driven development with rspec, jest, capybara</li>
             </ul>
           </div>
           <div id="section4" class="container">
-            <ul>Scientific Research
-              <li>Mineralogy</li>
-              <li>Astrophysics</li>
-              <li>Geology</li>
+            <ul>Network, APIs, and Libraries
+              <li>ReactJS with Redux</li>
+              <li>VueJS with Vuex</li>
+              <li>Google Maps API</li>
+              <li>Heroku Deployment</li>
             </ul>
           </div>
           <div id="section5" class="container">
