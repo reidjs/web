@@ -3,6 +3,17 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <?php include("partials/project_onionup.html"); ?>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <?php include("partials/project_spacex.html"); ?>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <?php include("partials/project_eventbike.html"); ?>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
           <?php include("partials/project_rungrouper.html"); ?>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">

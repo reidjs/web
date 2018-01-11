@@ -10,9 +10,9 @@ sidenav and does not become active when scrolled to.  -->
           <ul class="nav nav-stacked">
             <li class="active"><a href="#top">Top</a></li>
             <li><a href="#section1">Programming</a></li>
-            <li><a href="#section2">Back-End</a></li>
-            <li><a href="#section3">Front-End</a></li>
-            <li><a href="#section4">Science</a></li>
+            <li><a href="#section2">Development</a></li>
+            <li><a href="#section3">Front-End/UX</a></li>
+            <li><a href="#section4">APIs/Libs</a></li>
             <li><a href="#section5">Education</a></li>
           </ul>
         </nav>
@@ -20,39 +20,45 @@ sidenav and does not become active when scrolled to.  -->
         <div class="col-sm-10 col-xs-12">
           <div id="section1" class="container">
             <!-- <div class="container"> -->
-              <ul>Programming Languages
+              <h1>Programming Languages</h1>
+              <ul>
                 <li>Ruby</li>
                 <li>JavaScript</li>
                 <li>Python</li>
-                <li>C/C++</li>
+                <li>Swift (Learning)</li>
               </ul>
             <!-- </div> -->
           </div>
           <div id="section2" class="container">
-            <ul>Back-End Development
-              <li>SQL</li>
-              <li>MongoDB</li>
-              <li>NodeJS</li>
-              <li>Apache Server</li>
+            <h1>App Development</h1>
+            <ul>
+              <li>Ruby on Rails Backend</li>
+              <li>NodeJS w/ Express Backend</li>
+              <li>PostgreSQL Database</li>
+              <li>Heroku Deployment</li>
             </ul>
           </div>
           <div id="section3" class="container">
-            <ul>Front-End Development
-              <li>jQuery</li>
-              <li>NodeJS</li>
-              <li>PHP</li>
-              <li>HTML/CSS</li>
+            <h1>Front-End/UX/Testing</h1>
+            <ul>
+              <li>Bootstrap Framework</li>
+              <li>Wordpress</li>
+              <li>Responsive Design</li>
+              <li>Test driven development with rspec, jest, capybara</li>
             </ul>
           </div>
           <div id="section4" class="container">
-            <ul>Scientific Research
-              <li>Mineralogy</li>
-              <li>Astrophysics</li>
-              <li>Geology</li>
+            <h1>Network, APIs, and Libraries</h1>
+            <ul>
+              <li>ReactJS with Redux</li>
+              <li>VueJS with Vuex</li>
+              <li>Google Maps API</li>
+              <li>Heroku Deployment</li>
             </ul>
           </div>
           <div id="section5" class="container">
-            <ul>Education
+            <h1>Education</h1>
+            <ul>
               <li>B.S. Earth and Planetary Science - UC Santa Cruz</li>
               <li>M.A.T. Earth Science Education - American Museum of Natural History</li>
               <li>Software Engineering Track - App Academy SF</li>
